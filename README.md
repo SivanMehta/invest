@@ -1,2 +1,1 @@
-# invest
-What does investing do for you
+You run visualize the data yourself by running `make`
