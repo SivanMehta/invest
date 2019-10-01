@@ -11,12 +11,12 @@ function generateData(opts) {
     amount = (amount + investment) * monthly;
   }
 
-  const totalInvestments = years * 12 * investment;
+  const totalInvestments = years * 12 * investment + initial;
   const totalInterest = amount - totalInvestments;
 
   result.innerHTML = `After <b>${years}</b> years, \your initial investment of \
   <b>${toMoney(initial)}</b> would be worth <b>${toMoney(amount)}</b>. <br /><br /> \
-  This would be comprised of <b>${toMoney(totalInvestments)}</b> of monthly investments
+  This would be comprised of <b>${toMoney(totalInvestments)}</b> of manual investments
   and <b>${toMoney(totalInterest)}</b> worth of accumlated interest`;
 }
 
