@@ -22,7 +22,7 @@ function generateData(opts) {
 
 function coerce(data) {
   const value = parseInt(data);
-  if(isNaN(value)) {
+  if(isNaN(value) || value < 0) {
     console.error(value);
     throw new Error('stop being cheeky');
   }
