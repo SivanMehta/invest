@@ -17,7 +17,7 @@ function generateData(opts) {
   result.innerHTML = `After <b>${years}</b> years, \your initial investment of \
   <b>${toMoney(initial)}</b> would be worth <b>${toMoney(amount)}</b>. <br /><br /> \
   This would be comprised of <b>${toMoney(totalInvestments)}</b> of manual investments
-  and <b>${toMoney(totalInterest)}</b> worth of accumlated interest`;
+  and <b>${toMoney(totalInterest)}</b> worth of accumulated interest`;
 }
 
 function coerce(data) {
